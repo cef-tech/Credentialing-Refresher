@@ -68,10 +68,10 @@ export default function Certificate({ data, onRestart }: Props) {
 
 <div className="certSigRow">
   <div className="certSigBlock">
-    <img src="/signature.png" alt="CeCe Noland Signature" style={{ height: 52, display: 'block', margin: '0 auto 4px' }} />
-    <div className="certSig" style={{ borderTop: '1px solid #0A1628', paddingTop: 4 }}>CeCe Noland</div>
-    <div className="certSigLabel">Director, Clinical Education · TrackX Technology</div>
-  </div>
+  <img src="/signature.png" alt="" style={{ height: 52, display: 'block', margin: '0 auto 8px' }} />
+  <div className="certSig">CeCe Noland</div>
+  <div className="certSigLabel">Director, Clinical Education · TrackX Technology</div>
+</div>
 </div>
 
         <div className="certFooter">

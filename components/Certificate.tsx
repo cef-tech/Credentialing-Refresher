@@ -72,9 +72,9 @@ export default function Certificate({ data, onRestart }: Props) {
             <div className="certSigLabel">Representative Signature</div>
           </div>
           <div className="certSigBlock">
-            <div className="certSig">TrackX Technology</div>
-            <div className="certSigLabel">Issuing Organization</div>
-          </div>
+  <img src="/signature.png" alt="Authorized Signature" style={{ height: 52, marginBottom: 4, display: 'block', margin: '0 auto 4px' }} />
+  <div className="certSigLabel">Clinical Education · TrackX Technology</div>
+</div>
         </div>
 
         <div className="certFooter">

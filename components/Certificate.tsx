@@ -66,16 +66,13 @@ export default function Certificate({ data, onRestart }: Props) {
           Anti-Kickback Statute, and False Claims Act
         </p>
 
-        <div className="certSigRow">
-          <div className="certSigBlock">
-            <div className="certSig">{data.esig}</div>
-            <div className="certSigLabel">Representative Signature</div>
-          </div>
-          <div className="certSigBlock">
-  <img src="/signature.png" alt="Authorized Signature" style={{ height: 52, marginBottom: 4, display: 'block', margin: '0 auto 4px' }} />
-  <div className="certSigLabel">Clinical Education · TrackX Technology</div>
+<div className="certSigRow">
+  <div className="certSigBlock">
+    <img src="/signature.png" alt="CeCe Noland Signature" style={{ height: 52, display: 'block', margin: '0 auto 4px' }} />
+    <div className="certSig" style={{ borderTop: '1px solid #0A1628', paddingTop: 4 }}>CeCe Noland</div>
+    <div className="certSigLabel">Director, Clinical Education · TrackX Technology</div>
+  </div>
 </div>
-        </div>
 
         <div className="certFooter">
           <span>Completion Date: <strong>{data.date}</strong></span>

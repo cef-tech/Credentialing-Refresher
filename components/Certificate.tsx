@@ -80,6 +80,10 @@ export default function Certificate({ data, onRestart }: Props) {
           <span>Rep ID: <strong>{data.repId || '—'}</strong></span>
           <span>Valid for 12 months from date of completion</span>
         </div>
+
+        <div className="certConfidential">
+          🔒 CONFIDENTIAL — FOR TRACKX EMPLOYEES ONLY · Internal Use Only · Not for distribution
+        </div>
       </div>
 
       <div className="certActions">

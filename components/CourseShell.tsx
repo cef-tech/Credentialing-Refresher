@@ -15,10 +15,10 @@ export default function CourseShell({ completed, onCheck, onComplete }: Props) {
   const [activeModule, setActiveModule] = useState(1)
 
   const doneCount = Object.values(completed).filter(Boolean).length
-  const pct = Math.round((doneCount / 8) * 100)
+  const pct = Math.round((doneCount / 9) * 100)
 
   function handleNext(id: number) {
-    if (id < 8) {
+    if (id < 9) {
       setActiveModule(id + 1)
       window.scrollTo({ top: 0, behavior: 'smooth' })
     } else {
@@ -39,7 +39,7 @@ export default function CourseShell({ completed, onCheck, onComplete }: Props) {
           <div className="progressBarFill" style={{ width: `${pct}%` }} />
         </div>
         <div className="progressLabel">
-          Module {activeModule} of 8 · {doneCount}/8 complete
+          Module {activeModule} of 9 · {doneCount}/9 complete
         </div>
       </div>
 

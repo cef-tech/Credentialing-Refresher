@@ -35,13 +35,14 @@ export default function Completion({ userData, onGenerate }: Props) {
     'Module 6 – National Patient Safety Goals',
     'Module 7 – Compliance, AdvaMed Code & Fraud',
     'Module 8 – Aseptic Awareness for Device Representatives',
+    'Module 9 – Electrical Safety',
   ]
 
   return (
     <div className="completionPage">
       <div className="completionHero">
         <div className="completionSeal">🎓</div>
-        <h2>All 8 Modules Complete</h2>
+        <h2>All 9 Modules Complete</h2>
         <p>
           Review your information, read the attestation, and provide your electronic signature
           to generate your TrackX certificate of completion.

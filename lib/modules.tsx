@@ -514,4 +514,87 @@ export const MODULES: Module[] = [
       </>
     ),
   },
+
+  {
+    id: 9,
+    emoji: '⚡',
+    shortTitle: 'Electrical Safety',
+    title: 'Electrical Safety in the Surgical Environment',
+    label: 'Module 9 · NFPA 99 · TJC EC.02.05.01 · OSHA 29 CFR 1910.303',
+    colorClass: 'modColor1',
+    intro: 'The OR contains more powered medical equipment per square foot than almost any other environment. As a TrackX representative operating powered navigation hardware, displays, and imaging systems, understanding electrical safety is both a personal protection requirement and a patient safety obligation.',
+    checkLabel: 'I have read and understood the Electrical Safety module. I acknowledge my responsibilities regarding electrical safety in the surgical environment and commit to safe practices when operating or supporting any powered equipment.',
+    nextLabel: 'Proceed to Sign & Certify →',
+    content: (
+      <>
+        <SectionBlock title="⚡ OR Electrical Hazards — Why the Risk Is Elevated">
+          <p>The surgical environment creates unique electrical hazards due to the combination of high-powered equipment, fluids, and patients under anesthesia who cannot protect themselves from injury:</p>
+          <TwoCol>
+            <MiniCard title="Macroshock" body="Electrical current flowing through the body surface — can cause burns, cardiac arrhythmia, or death. Threshold for ventricular fibrillation is approximately 100–300 mA at 60 Hz." />
+            <MiniCard title="Microshock" body="Tiny currents (as low as 10 µA) that reach the heart directly via catheters or internal leads. Patients with central lines or pacemakers are especially vulnerable — imperceptible to touch, lethal to the heart." />
+          </TwoCol>
+          <InfoList items={[
+            'Wet conditions in the OR reduce electrical resistance dramatically — spilled saline, irrigation fluids, or wet gloves can create conduction paths that would not exist in a dry environment.',
+            'Never operate powered equipment near standing fluids or pools of irrigant on the OR floor.',
+            'Damaged insulation on cables, power cords, or connectors near fluids is a shock and fire hazard — do not attempt to operate equipment with visibly damaged cables.',
+          ]} />
+        </SectionBlock>
+
+        <SectionBlock title="🖥️ TrackX Equipment Responsibilities">
+          <p>As the TrackX representative, you are responsible for the setup, operation, and teardown of the navigation system and associated powered hardware. Your electrical safety obligations during each phase:</p>
+          <InfoList items={[
+            <><strong>Pre-case setup:</strong> Inspect all TrackX power cords, cables, and connectors before plugging in. Check for fraying, kinks, exposed wiring, cracked insulation, or bent pins. If any damage is found, do not use the equipment — report it and request a replacement unit.</>,
+            <><strong>Power connections:</strong> Connect TrackX equipment only to hospital-grade, grounded outlets (three-prong). Never use consumer extension cords, power strips without surge protection, or adapters that defeat the ground pin. OR outlets are on isolated power circuits for patient protection.</>,
+            <><strong>Cable management:</strong> Route power and data cables away from the sterile field, away from high-traffic floor areas where cords can be tripped over, and away from fluids. Secure cables with cord organizers or route them above floor level where possible.</>,
+            <><strong>Post-case teardown:</strong> Power down equipment in the correct sequence before disconnecting cables. Never yank cords from outlets by the cable — grip the plug body. Coil cables loosely without tight kinks that damage internal conductors over time.</>,
+            'Do not modify, splice, or repair any TrackX electrical component in the field. All electrical repairs must go through TrackX technical services.',
+          ]} />
+        </SectionBlock>
+
+        <SectionBlock title="🔌 Isolated Power Systems & the Line Isolation Monitor (LIM)">
+          <p>Most OR suites use an <strong>isolated power system (IPS)</strong> rather than standard grounded power. This design breaks the path between the power supply and ground, dramatically reducing the risk of microshock to patients:</p>
+          <InfoList items={[
+            <><strong>Line Isolation Monitor (LIM):</strong> The LIM continuously monitors the integrity of the isolated circuit. A LIM alarm (yellow warning light, audible tone) indicates a fault condition — current is beginning to leak to ground, partially defeating the isolation.</>,
+            'If the LIM alarms when you plug in TrackX equipment: unplug the most recently connected device. If the alarm clears, that equipment is the fault source — do not reconnect it. Report the fault to the OR charge nurse and biomedical engineering.',
+            'Do not ignore or silence a LIM alarm without identifying the fault source. The first fault reduces but does not eliminate isolation protection; a second fault on the same circuit can complete the path and create a shock hazard.',
+            'LIM alarms are not the same as a fire alarm — the procedure can often continue with the faulty equipment removed. Coordinate with the surgical team before any equipment removal during an active case.',
+          ]} />
+        </SectionBlock>
+
+        <SectionBlock title="🔪 Electrosurgical Unit (ESU) Interaction">
+          <p>The electrosurgical unit (ESU, Bovie) is the most common source of electrical interference and burn injury in the OR. Understanding how the ESU interacts with TrackX equipment protects both the patient and the navigation system:</p>
+          <InfoList items={[
+            <><strong>Return electrode (grounding pad):</strong> The ESU requires a patient return electrode (grounding pad) placed on the patient&apos;s body. If the return electrode is improperly placed, current seeks alternate return paths — through any conductive item in contact with the patient, potentially including navigation arrays or trackers attached to the patient.</>,
+            'Ensure TrackX navigation arrays, clamps, and any metal components are positioned so they do not lie between the active ESU electrode and the return pad, as this creates an unintended current pathway.',
+            'If the surgeon reports unexpected ESU behavior — poor cutting, excessive tissue burning, patient complaints of warming or pain at non-target sites — notify the circulator immediately. These can indicate a return electrode problem.',
+            <><strong>Interference with navigation:</strong> ESU activation can temporarily disrupt TrackX electromagnetic tracking. This is expected behavior — communicate to the surgeon that a brief tracking interruption during ESU use is normal, and tracking should resume when the ESU is deactivated.</>,
+            'Never position TrackX electromagnetic field generators directly adjacent to ESU cables, generators, or active electrode cords — electromagnetic interference will degrade tracking accuracy.',
+          ]} />
+        </SectionBlock>
+
+        <SectionBlock title="💧 Fluid Safety Around Electrical Equipment">
+          <InfoList items={[
+            'Irrigation fluid, blood, and saline are the most common sources of electrical hazard in the OR — all are electrically conductive.',
+            'Position TrackX power units, displays, and generators on stable surfaces or carts away from areas where fluids are likely to pool or splash — particularly away from the irrigation inflow/outflow area and below-table suction tubing.',
+            'If fluid contacts any powered TrackX component: power down immediately before attempting to assess or dry the equipment. Never touch a powered device that has been exposed to significant fluid contact while it is still plugged in.',
+            'Notify TrackX technical services of any fluid ingress event before returning the equipment to service — internal corrosion and insulation damage may not be immediately visible.',
+          ]} />
+        </SectionBlock>
+
+        <SectionBlock title="🏷️ Equipment Inspection & Out-of-Service Tagging">
+          <p>NFPA 99 and facility biomedical engineering programs require that medical electrical equipment be regularly inspected and that damaged equipment be removed from service. Your role in this system:</p>
+          <InfoList items={[
+            'Inspect TrackX equipment for visible damage at the start of every case. Document any damage found.',
+            'If equipment is found damaged or malfunctions electrically during a case (sparking, abnormal heating, tripping a circuit, or causing a LIM alarm), remove it from service by labeling it &quot;Out of Service — Do Not Use&quot; and segregating it from serviceable equipment.',
+            'Do not return tagged equipment to service without clearance from TrackX technical services or the facility&apos;s biomedical engineering department.',
+            'Maintain a record of any electrical incidents involving TrackX equipment — LIM alarms, ESU interactions, fluid exposures, or patient or staff shock reports — and report them through TrackX&apos;s adverse event reporting process.',
+          ]} />
+        </SectionBlock>
+
+        <AlertBox type="red">
+          <strong>Electrical Emergency Response:</strong> If you witness an electric shock to a person — do NOT touch them directly while they may still be in contact with the source. Call for help immediately (&quot;Code Blue&quot; or facility emergency number), disconnect power at the wall outlet or circuit breaker if safe to do so, and initiate CPR only after confirming the person is free from the electrical source. Report all electrical shock incidents to the facility and TrackX compliance immediately.
+        </AlertBox>
+      </>
+    ),
+  },
 ]

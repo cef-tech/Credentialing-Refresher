@@ -10,6 +10,7 @@ const CERT_MODULES = [
   '✅ Patient Safety Goals',
   '⚖️ Compliance & Ethics',
   '🧤 Aseptic Awareness',
+  '⚡ Electrical Safety',
 ]
 
 interface Props {
@@ -62,7 +63,7 @@ export default function Certificate({ data, onRestart }: Props) {
         <p className="certStandards">
           Satisfies annual credentialing requirements per HIPAA (45 CFR 160/164),
           OSHA 29 CFR 1910.1030, NRC/ALARA Radiation Standards, AORN OR Protocol Standards,
-          NFPA 101, The Joint Commission NPSGs, AdvaMed Code of Ethics,
+          NFPA 99 &amp; 101, The Joint Commission NPSGs &amp; EC.02.05.01, AdvaMed Code of Ethics,
           Anti-Kickback Statute, and False Claims Act
         </p>
 

@@ -24,7 +24,7 @@ export default function Home() {
   const [userData, setUserData] = useState<UserData>({ name: '', company: '', repId: '' })
   const [completed, setCompleted] = useState<Record<number, boolean>>({
     1: false, 2: false, 3: false, 4: false,
-    5: false, 6: false, 7: false, 8: false,
+    5: false, 6: false, 7: false, 8: false, 9: false,
   })
   const [certData, setCertData] = useState<CertData | null>(null)
 
@@ -49,7 +49,7 @@ export default function Home() {
   function handleRestart() {
     setView('landing')
     setUserData({ name: '', company: '', repId: '' })
-    setCompleted({ 1: false, 2: false, 3: false, 4: false, 5: false, 6: false, 7: false, 8: false })
+    setCompleted({ 1: false, 2: false, 3: false, 4: false, 5: false, 6: false, 7: false, 8: false, 9: false })
     setCertData(null)
   }
 
